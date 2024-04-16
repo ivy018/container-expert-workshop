@@ -1,15 +1,15 @@
 ### 도구 설치
 
-1. kubectl 1.27 설치 [https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+1. kubectl 1.29 설치 [https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
 
 ```
-curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.29.0/2024-01-04/bin/darwin/amd64/kubectl
 chmod +x ./kubectl
 mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
 echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
 kubectl version --short --client
 ```
-2. eksctl 0.142.0 설치 [https://github.com/weaveworks/eksctl/blob/main/README.md#installation](https://github.com/weaveworks/eksctl/blob/main/README.md#installation)
+2. eksctl 0.175.0 설치 [https://github.com/weaveworks/eksctl/blob/main/README.md#installation](https://github.com/weaveworks/eksctl/blob/main/README.md#installation)
 
 ```
 # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
